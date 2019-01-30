@@ -1,0 +1,132 @@
+body {
+    /* 	font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.8;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #1D1D1F;
+    border-top: solid 20px #131200;
+    color: #eaeaea;
+}
+
+h1 img {
+    width: 250px;
+}
+
+.hero {
+    background-image: url(mike-dennler-173199-unsplash.jpg);
+    padding-top: 260px;
+    padding-bottom: 410px;
+    background-size: cover;
+    background-position: right center;
+    height: 100vh;
+    text-shadow: 1px 1px 1px white;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 740px;
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.intro h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.intro-button {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.intro button {
+    /*   background-color: #eaeaea; */
+    background-color: #1E5399;
+    border: 1px solid #3C493F;
+    padding: 18px 25px 18px 25px;
+    color: #eaeaea;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: ease 0.3s;
+    box-shadow: 1px 2px #3C493F;
+    cursor: pointer;
+}
+
+.intro button:hover {
+    transition: ease 0.3s;
+    transform: translate3d(10px, 5px, 0px);
+    box-shadow: 4px 5px #1d1d1f;
+    background-color: #4f6e99;
+}
+
+@media (max-width: 650px) {
+    .intro h2 {
+        font-size: 40px;
+    }
+    .intro p {
+        font-size: 22px;
+    }
+    .intro button {
+        font-size: 20px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .hero {
+        padding-top: 200px;
+    }
+    .intro h2 {
+        font-size: 30px;
+    }
+    .intro p {
+        padding-top: 30px;
+    }
+    .intro button {
+        font-size: 18px;
+    }
+    .intro-button {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:320px) {
+    .hero {
+        padding-top: 150px;
+    }
+    .intro p {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+    .intro button {
+        font-size: 16px;
+    }
+    .intro-button {
+        margin-top: 60px;
+    }
+}
